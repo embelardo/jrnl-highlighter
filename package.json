@@ -1,0 +1,25 @@
+{
+    "name": "jrnl",
+    "displayName": "jrnl: Journal Highlighter",
+    "description": "Highlights for jrnl Journal files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "jrnl",
+            "aliases": ["jrnl", "jrnl"],
+            "extensions": [".jrnl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "jrnl",
+            "scopeName": "source.jrnl",
+            "path": "./syntaxes/jrnl.tmLanguage.json"
+        }]
+    }
+}
